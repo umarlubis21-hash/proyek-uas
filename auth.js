@@ -32,7 +32,7 @@ const UserDB = window.UserDB || (window.UserDB = {
     const restricted = ['login.html', 'register.html'];
     const page = location.pathname.split('/').pop() || '';
     if (restricted.includes(page) && Session.isLoggedIn()) {
-        location.replace('beranda.html');
+        location.replace('index.html');
     }
 })();
 
@@ -145,7 +145,7 @@ if (loginForm) {
         successBtn('loginBtn', '✓ Masuk!');
         await delay(700);
 
-        const redirect = new URLSearchParams(location.search).get('redirect') || 'beranda.html';
+        const redirect = new URLSearchParams(location.search).get('redirect') || 'index.html';
         location.href  = redirect;
     });
 }
@@ -295,6 +295,6 @@ if (registerForm) {
 
         successBtn('registerBtn', '✓ Akun Dibuat!');
         await delay(700);
-        location.href = 'beranda.html';
+        location.href = 'index.html';
     });
 }
