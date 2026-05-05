@@ -230,6 +230,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
 }
 
 .hero-desc {
@@ -443,7 +444,7 @@ body {
 }
 .section-header h2 {
     font-family: var(--font-display);
-    font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+    font-size: clamp(1.5rem, 5vw, 2.6rem);
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: .75rem;
@@ -454,6 +455,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
 }
 
 .layanan-section {
@@ -523,6 +525,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    display: inline-block;
 }
 
 .paket-grid {
@@ -768,4 +771,7 @@ body {
     .navbar { padding: 1rem 1.25rem; }
     .layanan-section, .cara-kerja-section, .paket-section, .cta-section { padding: 3.5rem 1.25rem; }
     .paket-grid { grid-template-columns: 1fr; }
+    .mobile-br { display: block; }
 }
+
+.mobile-br { display: none; }
