@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Paket Layanan – Laundry Service</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="laundry1.css">
+        <link rel="stylesheet" href="package.css">
+    </head>
+    <body>
+        <nav class="navbar">
+            <a href="beranda.html" class="nav-brand">
+                <span class="nav-logo">◎</span>
+                Laundry Service
+            </a>
+            <div class="nav-links">
+                <a href="beranda.html">Beranda</a>
+                <a href="package.html" class="active">Paket</a>
+                <a href="login.html" class="nav-btn">Masuk</a>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">☰</button>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-inner">
+                <span class="hero-badge">✦ Harga Terjangkau</span>
+                <h1>Pilih Paket<br><em>Terbaik Anda</em></h1>
+                <p>Dari cucian harian hingga perawatan pakaian premium — kami punya paket yang tepat untuk setiap kebutuhan.</p>
+
+                <div class="billing-toggle">
+                    <span class="toggle-label" id="labelKg">Per Kilogram</span>
+                    <button class="toggle-switch" id="billingToggle" aria-pressed="false">
+                        <span class="toggle-knob"></span>
+                    </button>
+                    <span class="toggle-label" id="labelBulanan">Bulanan</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-section">
+            <div class="pricing-grid" id="pricingGrid">
+
+                <div class="pricing-card" data-plan="basic">
+                    <div class="card-top">
+                        <div class="card-icon">🧺</div>
+                        <h2 class="card-name">Basic</h2>
+                        <p class="card-desc">Cocok untuk kebutuhan cuci sehari-hari.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-kg" data-kg="5.000" data-monthly="149.000">
+                            <span class="currency">Rp</span>
+                            <span class="amount">5.000</span>
+                            <span class="unit">/kg</span>
+                        </span>
+                    </div>
+                    <ul class="card-features">
+                        <li class="feat-yes">Cuci + Bilas + Peras</li>
+                        <li class="feat-yes">Deterjen Standar</li>
+                        <li class="feat-yes">Selesai dalam 2 hari</li>
+                        <li class="feat-yes">Min. 2 kg per order</li>
+                        <li class="feat-no">Pengharum Pakaian</li>
+                        <li class="feat-no">Setrika</li>
+                        <li class="feat-no">Pickup & Delivery</li>
+                    </ul>
+                    <a href="register.html" class="card-btn card-btn--outline">Pilih Basic</a>
+                </div>
+
+                <div class="pricing-card pricing-card--featured" data-plan="regular">
+                    <div class="badge-popular">⭐ Terpopuler</div>
+                    <div class="card-top">
+                        <div class="card-icon">✨</div>
+                        <h2 class="card-name">Regular</h2>
+                        <p class="card-desc">Pilihan terbaik untuk keluarga aktif.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-kg" data-kg="8.000" data-monthly="299.000">
+                            <span class="currency">Rp</span>
+                            <span class="amount">8.000</span>
+                            <span class="unit">/kg</span>
+                        </span>
+                    </div>
+                    <ul class="card-features">
+                        <li class="feat-yes">Cuci + Bilas + Peras</li>
+                        <li class="feat-yes">Deterjen Premium</li>
+                        <li class="feat-yes">Selesai dalam 1 hari</li>
+                        <li class="feat-yes">Min. 2 kg per order</li>
+                        <li class="feat-yes">Pengharum Pakaian</li>
+                        <li class="feat-yes">Setrika</li>
+                        <li class="feat-no">Pickup & Delivery</li>
+                    </ul>
+                    <a href="register.html" class="card-btn card-btn--primary">Pilih Regular</a>
+                </div>
+
+                <div class="pricing-card" data-plan="premium">
+                    <div class="card-top">
+                        <div class="card-icon">👔</div>
+                        <h2 class="card-name">Premium</h2>
+                        <p class="card-desc">Layanan lengkap dengan jemput-antar.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-kg" data-kg="12.000" data-monthly="499.000">
+                            <span class="currency">Rp</span>
+                            <span class="amount">12.000</span>
+                            <span class="unit">/kg</span>
+                        </span>
+                    </div>
+                    <ul class="card-features">
+                        <li class="feat-yes">Cuci + Bilas + Peras</li>
+                        <li class="feat-yes">Deterjen Premium</li>
+                        <li class="feat-yes">Selesai dalam 6 jam</li>
+                        <li class="feat-yes">Min. 2 kg per order</li>
+                        <li class="feat-yes">Pengharum Pakaian</li>
+                        <li class="feat-yes">Setrika Rapi</li>
+                        <li class="feat-yes">Pickup &amp; Delivery Gratis</li>
+                    </ul>
+                    <a href="register.html" class="card-btn card-btn--outline">Pilih Premium</a>
+                </div>
+
+                <div class="pricing-card" data-plan="dryclean">
+                    <div class="card-top">
+                        <div class="card-icon">🥻</div>
+                        <h2 class="card-name">Dry Clean</h2>
+                        <p class="card-desc">Untuk pakaian delicate & bahan khusus.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="price-kg" data-kg="25.000" data-monthly="899.000">
+                            <span class="currency">Rp</span>
+                            <span class="amount">25.000</span>
+                            <span class="unit">/item</span>
+                        </span>
+                    </div>
+                    <ul class="card-features">
+                        <li class="feat-yes">Dry Cleaning Profesional</li>
+                        <li class="feat-yes">Perawatan Bahan Khusus</li>
+                        <li class="feat-yes">Selesai dalam 2–3 hari</li>
+                        <li class="feat-yes">Packing Plastik Khusus</li>
+                        <li class="feat-yes">Inspeksi Kualitas</li>
+                        <li class="feat-yes">Setrika Steam</li>
+                        <li class="feat-yes">Pickup &amp; Delivery Gratis</li>
+                    </ul>
+                    <a href="register.html" class="card-btn card-btn--outline">Pilih Dry Clean</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="addon-section">
+            <div class="addon-inner">
+                <h2 class="section-title">Layanan Tambahan</h2>
+                <p class="section-sub">Kombinasikan dengan paket manapun sesuai kebutuhan Anda.</p>
+                <div class="addon-grid">
+                    <div class="addon-card">
+                        <span class="addon-icon">🌸</span>
+                        <h3>Pewangi Ekstra</h3>
+                        <p>Aroma tahan lama pilihan Anda</p>
+                        <span class="addon-price">+ Rp 3.000/kg</span>
+                    </div>
+                    <div class="addon-card">
+                        <span class="addon-icon">💧</span>
+                        <h3>Anti-Bakteri</h3>
+                        <p>Deterjen antibakteri & antijamur</p>
+                        <span class="addon-price">+ Rp 4.000/kg</span>
+                    </div>
+                    <div class="addon-card">
+                        <span class="addon-icon">⚡</span>
+                        <h3>Express 3 Jam</h3>
+                        <p>Selesai dalam 3 jam dijamin</p>
+                        <span class="addon-price">+ Rp 10.000/order</span>
+                    </div>
+                    <div class="addon-card">
+                        <span class="addon-icon">🚗</span>
+                        <h3>Pickup & Delivery</h3>
+                        <p>Jemput & antar ke lokasi Anda</p>
+                        <span class="addon-price">+ Rp 10.000</span>
+                    </div>
+                    <div class="addon-card">
+                        <span class="addon-icon">📦</span>
+                        <h3>Packing Khusus</h3>
+                        <p>Lipat rapi + packing plastik vakum</p>
+                        <span class="addon-price">+ Rp 5.000/order</span>
+                    </div>
+                    <div class="addon-card">
+                        <span class="addon-icon">👟</span>
+                        <h3>Cuci Sepatu</h3>
+                        <p>Bersih sempurna per pasang</p>
+                        <span class="addon-price">Rp 30.000/pasang</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="faq-inner">
+                <h2 class="section-title">Pertanyaan Umum</h2>
+                <div class="faq-list" id="faqList">
+                    <div class="faq-item">
+                        <button class="faq-q">Berapa berat minimum per order? <span class="faq-arrow">›</span></button>
+                        <div class="faq-a"><p>Minimum order adalah 2 kg untuk semua paket reguler. Untuk Dry Clean dihitung per item tanpa minimum.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Bagaimana cara memesan layanan? <span class="faq-arrow">›</span></button>
+                        <div class="faq-a"><p>Daftar akun, pilih paket, tentukan tanggal jemput, lalu kami akan datang ke lokasi Anda. Mudah dan cepat!</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Apakah pakaian saya aman? <span class="faq-arrow">›</span></button>
+                        <div class="faq-a"><p>Setiap pakaian diberi tag khusus dan diproses terpisah. Kami bertanggung jawab penuh atas keamanan pakaian Anda.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Metode pembayaran apa yang tersedia? <span class="faq-arrow">›</span></button>
+                        <div class="faq-a"><p>Kami menerima tunai, transfer bank, GoPay, OVO, Dana, dan ShopeePay.</p></div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-q">Apakah ada diskon untuk paket bulanan? <span class="faq-arrow">›</span></button>
+                        <div class="faq-a"><p>Ya! Paket bulanan hemat hingga 25% dibanding harga per-kg. Aktifkan toggle "Bulanan" di atas untuk melihat harga.</p></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-inner">
+                <h2>Siap Memulai?</h2>
+                <p>Daftar sekarang dan nikmati <strong>gratis ongkos jemput</strong> untuk order pertama Anda!</p>
+                <div class="cta-buttons">
+                    <a href="register.html" class="cta-btn cta-btn--primary">Daftar Gratis</a>
+                    <a href="beranda.html#layanan" class="cta-btn cta-btn--ghost">Hubungi Kami</a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <span>© 2025 Laundry Service · info@laundryservice.com · (123) 456-7890</span>
+        </footer>
+
+        <script src="auth.js"></script>
+        <script src="laundry2.js"></script>
+        <script src="package.js"></script>
+        <script>
+
+            if (typeof Session !== 'undefined' && Session.isLoggedIn()) {
+                const user = Session.get();
+                const userName = user.firstName || (user.name ? user.name.split(' ')[0] : 'User');
+                
+                const navBtn = document.querySelector('.nav-btn');
+                if (navBtn && navBtn.getAttribute('href') === 'login.html') {
+                    navBtn.textContent = 'Keluar';
+                    navBtn.href = '#';
+                    navBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        Session.clear();
+                        window.location.reload();
+                    });
+                    
+                    const greeting = document.createElement('span');
+                    greeting.textContent = `Halo, ${userName}!`;
+                    greeting.style.fontWeight = '600';
+                    greeting.style.color = 'var(--clr-primary)';
+                    greeting.style.marginRight = '1rem';
+                    navBtn.parentNode.insertBefore(greeting, navBtn);
+                }
+            }
+        </script>
+    </body>
+</html>

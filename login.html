@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login – Laundry Service</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="laundry1.css">
+        <link rel="stylesheet" href="auth.css">
+    </head>
+    <body>
+        <div class="auth-wrapper">
+            <div class="auth-panel">
+                <div class="panel-logo">◎</div>
+                <h2 class="panel-title">Laundry<br>Service</h2>
+                <p class="panel-tagline">Bersih, Segar,<br>Tepat Waktu.</p>
+                <ul class="panel-features">
+                    <li>🧺 Wash &amp; Fold Express</li>
+                    <li>✨ Dry Cleaning Premium</li>
+                    <li>🚗 Pickup &amp; Delivery</li>
+                </ul>
+                <a href="beranda.html" class="panel-back">← Kembali ke Beranda</a>
+            </div>
+
+            <div class="auth-card">
+                <div class="auth-header">
+                    <h1>Selamat Datang</h1>
+                    <p>Masuk ke akun Anda</p>
+                </div>
+
+                <form class="auth-form" id="loginForm" novalidate>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">✉</span>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="nama@email.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <span class="field-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input
+                                type="password"
+                                id="password"
+                                name="password"
+                                placeholder="Masukkan password"
+                                autocomplete="current-password"
+                                required
+                            />
+                            <button type="button" class="toggle-pw" aria-label="Tampilkan password">👁</button>
+                        </div>
+                        <span class="field-error" id="passwordError"></span>
+                    </div>
+
+                    <div class="form-row">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="remember" name="remember" />
+                            <span class="checkbox-custom"></span>
+                            Ingat saya
+                        </label>
+                        <a href="#" class="forgot-link">Lupa password?</a>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="loginBtn">
+                        <span class="btn-text">Masuk</span>
+                        <span class="btn-spinner" hidden>⟳</span>
+                    </button>
+                </form>
+
+                <p class="auth-switch">
+                    Belum punya akun?
+                    <a href="register.html">Daftar sekarang</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="logreg.js"></script>
+        <script src="auth.js"></script>
+    </body>
+</html>

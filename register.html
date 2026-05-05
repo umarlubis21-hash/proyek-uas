@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daftar – Laundry Service</title>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="laundry1.css">
+        <link rel="stylesheet" href="auth.css">
+    </head>
+    <body>
+        <div class="auth-wrapper">
+            <div class="auth-panel">
+                <div class="panel-logo">◎</div>
+                <h2 class="panel-title">Laundry<br>Service</h2>
+                <p class="panel-tagline">Bergabung &amp;<br>Nikmati Kemudahan.</p>
+                <ul class="panel-features">
+                    <li>⚡ Proses Cepat &amp; Mudah</li>
+                    <li>📦 Lacak Order Real-time</li>
+                    <li>🎁 Bonus untuk Member Baru</li>
+                </ul>
+                <a href="beranda.html" class="panel-back">← Kembali ke Beranda</a>
+            </div>
+
+            <div class="auth-card auth-card--register">
+                <div class="auth-header">
+                    <h1>Buat Akun</h1>
+                    <p>Isi data diri Anda untuk mendaftar</p>
+                </div>
+
+                <form class="auth-form" id="registerForm" novalidate>
+                    <div class="form-row-2">
+                        <div class="form-group">
+                            <label for="firstName">Nama Depan</label>
+                            <div class="input-wrap">
+                                <span class="input-icon">👤</span>
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="Budi"
+                                    autocomplete="given-name"
+                                    required
+                                />
+                            </div>
+                            <span class="field-error" id="firstNameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Nama Belakang</label>
+                            <div class="input-wrap">
+                                <span class="input-icon">👤</span>
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Santoso"
+                                    autocomplete="family-name"
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regEmail">Email</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">✉</span>
+                            <input
+                                type="email"
+                                id="regEmail"
+                                name="email"
+                                placeholder="nama@email.com"
+                                autocomplete="email"
+                                required
+                            />
+                        </div>
+                        <span class="field-error" id="regEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Nomor Telepon</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">☎</span>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                placeholder="08xxxxxxxxxx"
+                                autocomplete="tel"
+                                required
+                            />
+                        </div>
+                        <span class="field-error" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="regPassword">Password</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">🔒</span>
+                            <input
+                                type="password"
+                                id="regPassword"
+                                name="password"
+                                placeholder="Min. 8 karakter"
+                                autocomplete="new-password"
+                                required
+                            />
+                            <button type="button" class="toggle-pw" aria-label="Tampilkan password">👁</button>
+                        </div>
+                        <span class="field-error" id="regPasswordError"></span>
+                        <div class="pw-strength" id="pwStrength" hidden>
+                            <div class="pw-strength-bar">
+                                <div class="pw-strength-fill" id="pwStrengthFill"></div>
+                            </div>
+                            <span class="pw-strength-label" id="pwStrengthLabel"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Konfirmasi Password</label>
+                        <div class="input-wrap">
+                            <span class="input-icon">🔑</span>
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                name="confirmPassword"
+                                placeholder="Ulangi password"
+                                autocomplete="new-password"
+                                required
+                            />
+                            <button type="button" class="toggle-pw" aria-label="Tampilkan password">👁</button>
+                        </div>
+                        <span class="field-error" id="confirmPasswordError"></span>
+                    </div>
+
+                    <label class="checkbox-label terms-label">
+                        <input type="checkbox" id="terms" name="terms" required />
+                        <span class="checkbox-custom"></span>
+                        Saya menyetujui <a href="#">Syarat &amp; Ketentuan</a> dan <a href="#">Kebijakan Privasi</a>
+                    </label>
+                    <span class="field-error" id="termsError"></span>
+
+                    <button type="submit" class="btn-primary" id="registerBtn">
+                        <span class="btn-text">Buat Akun</span>
+                        <span class="btn-spinner" hidden>⟳</span>
+                    </button>
+                </form>
+
+                <p class="auth-switch">
+                    Sudah punya akun?
+                    <a href="login.html">Masuk di sini</a>
+                </p>
+            </div>
+        </div>
+
+        <script src="logreg.js"></script>
+        <script src="auth.js"></script>
+    </body>
+</html>
