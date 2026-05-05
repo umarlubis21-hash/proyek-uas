@@ -297,4 +297,11 @@ h2:nth-of-type(2) { animation: fadeUp 0.8s 0.35s ease both; }
   .container { padding: 40px 20px 60px; }
   .container > ul:last-of-type { flex-direction: column; }
   .container > ul:last-of-type li { text-align: center; }
+  .section-header h2 {
+        font-size: 1.6rem;
+        line-height: 1.3;
+        word-break: normal;
+        overflow-wrap: normal;
+        hyphens: none;
+    }
 };
