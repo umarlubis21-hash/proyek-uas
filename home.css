@@ -448,9 +448,10 @@ body {
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: .75rem;
-    word-break: break-word;       
-    overflow-wrap: break-word;
-    hyphens: auto;
+    text-align: center !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
 }
 .section-header h2 .text-accent {
     display: inline;              
@@ -462,7 +463,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    display: inline;
+    display: inline !important;
 }
 
 .layanan-section {
@@ -782,3 +783,23 @@ body {
 }
 
 .mobile-br { display: none; }
+
+.section-header h2 {
+    display: block !important;
+    text-align: center !important;
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+    align-items: unset !important;
+    gap: unset !important;
+}
+
+.section-header h2 .text-accent,
+.section-header h2 span {
+    display: inline !important;
+    white-space: normal !important;
+}
+
+.section-header h2::before {
+    display: none !important;
+}
